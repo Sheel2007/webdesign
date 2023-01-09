@@ -12,7 +12,10 @@ footer {
 }
 h1 {
     font-family: arial, helvetica, geneva, sans-serif;
+    font-size: 100px;
     text-align: left;
+    margin-left: 30px;
+    margin-top: 200px;
 }
 
 nav {
@@ -27,9 +30,10 @@ nav ul:first-child{
 }
 
 nav ul li {
+    text-align: center;
     display: inline-block;
     list-style: none;
-    margin-left: 10px;
+    /* margin-left: 5px; */
 }
 
 nav ul li a {
@@ -41,6 +45,21 @@ nav ul li a {
 
 nav ul li a:first-of-type {
     margin-left: 100px;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #261cdb;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
 }
 
 .menu {
