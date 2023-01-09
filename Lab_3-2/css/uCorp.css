@@ -1,0 +1,69 @@
+/* STYLE SHEET FOR INDEX.HTM */
+
+
+
+article {	
+  padding: 10px;
+}
+
+body {
+  font-size: 80%;
+  font-family: arial, helvetica, geneva, sans-serif;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #111dc5;
+}
+
+footer {
+  font-size: 80%;
+  text-align: center;
+  clear: both;
+  border-top-style: solid;
+  border-top-width: 5px;
+  border-top-color: #111dc5;
+  margin-top: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: arial, helvetica, geneva, sans-serif;
+  margin-top: 5px; 
+  margin-bottom: 0px; 
+}
+
+img {
+  width: 130px;
+}
+
+header {
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: #111dc5;
+}
+
+nav {
+  background: #4e58de;; 
+  font-weight: bold;
+  float: left;
+  height: 420px;
+  padding-right: 24px;
+  margin-right: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(212, 194, 194);
+}
+
+.floatright {
+  float: right;
+  clear: right;
+  margin: 10px;
+}
+
+
+

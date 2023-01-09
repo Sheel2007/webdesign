@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    align-items: center;
+}
+
+#playlist li:last-child {
+    border-bottom: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    align-items: center;
+}
+#playlist li:first-child {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+    background: linear-gradient(#f9f9f9, #e3e3e3);
+    width: 400px;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,45 @@
+.menu {
+    /*background-color: #1c1d25;*/
+    height: 20vh;
+    color: white;
+    font-size: 40px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+li {
+    width: 120px;
+    height: 50px;
+    text-decoration: none;
+    padding-left: 100px;
+}
+
+nav {
+    display: inline;
+    justify-content: space-between;
+    /*background: #d8d8d8;*/
+    font-weight: bold;
+    float: left;
+    height: 160px;
+    padding-right: 24px;
+    margin-right: 10px;
+    opacity: 0.8;
+    padding-left: 0px;
+    
+}
+
+a {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}

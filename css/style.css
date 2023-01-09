@@ -1,0 +1,52 @@
+/* STYLE SHEET FOR INDEX.HTML */
+body {
+    text-align: right;
+    font-size: 80%;
+    font-family: arial, helvetica, geneva, sans-serif;
+    background-size: 1920px 1080px;
+    padding-left: 50px;
+}
+footer {
+    font-size: 80%;
+    text-align: center;
+}
+h1 {
+    font-family: arial, helvetica, geneva, sans-serif;
+    text-align: left;
+}
+
+nav {
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    align-items: right;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a:first-of-type {
+    margin-left: 100px;
+}
+
+.menu {
+    /*background-color: #1c1d25;*/
+    height: 20vh;
+    color: white;
+    font-size: 40px;
+}

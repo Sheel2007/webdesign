@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    padding-left: 40px;
+}
+
+p {
+    padding-left: 40px;
+    font-weight: bold;
+}
+
+em {
+    font-weight: bold;
+}
+
+#green {
+    color: green;
+}
+
+#red {
+    color: red;
+}
+
+#blue {
+    color: blue;
+}
+
+#warning {
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.planets {
+    border-style: solid;
+    background: repeating-linear-gradient(
+    45deg,
+    #bc6060,
+    #bc6060 10px,
+    #984646 10px,
+    #984646 20px
+    );
+}
