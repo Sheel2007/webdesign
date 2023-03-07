@@ -4,30 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casting Variables</title>
+    <title>Document</title>
 </head>
 <style>
-h1 {
-    text-align: center;
-    padding: 100px;
-    font-size: 100px;
-    color: rgb(18, 18, 224);
-    font-family: 'Courier New', Courier, monospace;
-    /* Black shadow with 10px blur */
-    text-shadow: 5px 5px red;
+    ul {
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-around;
+    font-size: 30px;
+}
 
+li {
+    width: 120px;
+    height: 50px;
+    text-decoration: none;
+    padding-left: 100px;
+}
+
+nav {
+    display: inline;
+    justify-content: space-between;
+    /*background: #d8d8d8;*/
+    font-weight: bold;
+    float: left;
+    height: 160px;
+    padding-right: 24px;
+    margin-right: 10px;
+    opacity: 0.8;
+    padding-left: 0px;
+    
+}
+
+a {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    padding-top: 500px;
+}
+
+footer a {
+    padding-left: 30px;
 }
 </style>
 <script>
-function myFunction() {
-    let a = 1;
-    let b = 2;
-    var c = "The answer is " + a + b;
-    const header = document.getElementById("answer"); 
-    header.innerHTML = c + '!';
-}
+    function init() {
+        var loc = window.location.href;
+        var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+        var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                                loc + '?profile=css3';
+        document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+        document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+    }
+    window.onload = init;
 </script>
-<body onload="myFunction();">
-    <h1 id="answer"></h1>
+<body>
+    <nav>
+        <ul>
+            <li><a href="1.html">Question #1</a></li>
+            <li><a href="2.html">Question #2</a></li>
+        </ul>
+    </nav>
+    <br><br><br>
+    <footer id="vLinks">
+        <a id="vLink1">
+        <strong> HTML </strong> Valid! </a> 
+        <a id="vLink2">
+        <strong> CSS </strong> Valid! </a>
+    </footer>
 </body>
 </html>

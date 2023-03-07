@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function init() {
+        var loc = window.location.href;
+        var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+        var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                                loc + '?profile=css3';
+        document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+        document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+    }
+    window.onload = init;
+</script>
+<style>
+    body {
+        background-color: rgb(10, 10, 10);
+    }
+
+    div img {
+        height: auto;
+        flex: 1;
+        max-width: 20%;
+        padding-right: 300px;
+        padding-top: 50px;
+    }
+
+    h1 {
+        /* text-align: center; */
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 75px;
+        color:rgb(5, 218, 218);
+        /* padding-top: 300px; */
+        text-align: center;
+    }
+
+    img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p {
+        font-weight: 900;
+        font-size: 100px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(37, 195, 37);
+        text-align: center;
+    }
+
+    audio {
+        width: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transition-duration: 1s;
+        transition-delay: 0.3s;
+
+    }
+
+    audio:hover {
+        padding-left: 30px;
+        width: 30%;
+        color: blue;
+    }
+
+    footer a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+    }
+</style>
+<body>
+    <!-- <h1>Our favorite song!</h1> -->
+    <!-- <img src="rick.png" alt="rick astley"><br> -->
+    <h1>Our favorite song!</h1>
+    <img src="rick.png">
+
+    <p>↓Press This↓</p>
+    <audio controls loop="autoplay">
+        <!-- <source src="horse.ogg" type="audio/ogg"> -->
+        <source src="song.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <footer id="vLinks">
+        <a id="vLink1">
+        <strong> HTML </strong> Valid! </a> 
+        <a id="vLink2">
+        <strong> CSS </strong> Valid! </a>
+    </footer>
+</body>
+</html>
