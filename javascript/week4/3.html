@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+</script>
+<script>
+    function init() {
+        var loc = window.location.href;
+        var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+        var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                                loc + '?profile=css3';
+        document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+        document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+    }
+    window.onload = init;
+</script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+    html {
+        height: 100%;
+        scroll-behavior: smooth;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    h1 {
+        padding: 0;
+        font-size: 130px;
+        font-family: 'Poppins', sans-serif;
+        width: fit-content;
+        justify-content: space-evenly;
+    }
+
+    body {
+        min-height: 100vh;
+        background: linear-gradient(-45deg, #cf730a, #b71453, #1560c8, #0de134);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 100vh;
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    .container {
+        width: fit-content;
+        margin-left: auto;
+        padding-right: 30px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: -300px;
+    }
+
+    .disappear {
+        display: block;
+        width: 450px;
+        text-align: center;
+        cursor: pointer;
+        background: #fff;
+        border-radius: 10px;
+        padding-bottom: 0px;
+    }
+
+    .disappear p {
+        text-transform: uppercase;
+        transition-duration: 1s;
+        padding: 15px;
+        font-size: 25px;
+        color: #b30de1;
+    }
+
+    .disappear p:hover {
+       font-size: 50px;
+    }
+
+    footer {
+        cursor: pointer;
+        display: table;
+        position: relative;
+        padding-top: 300px;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: black;
+    }
+
+</style>
+</head>
+<body>
+    <h1>Question 5</h1>
+    <div class="container">
+        <div class="disappear">
+            <p>Click on me!</p>
+        </div>
+        
+        <div class="disappear">
+            <p>Click me too!</p>
+        </div>
+        
+        <div class="disappear">
+            <p>Click me away!</p>
+        </div>
+    </div>
+
+    
+    <footer id="vLinks">
+        <a id="vLink1">
+        <strong> HTML </strong> Valid! </a> 
+        <a id="vLink2">
+        <strong> CSS </strong> Valid! </a>
+    </footer>
+
+</body>
+</html>
