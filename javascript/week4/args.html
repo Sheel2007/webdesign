@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 50</title>
+</head>
+<style>
+    body {
+        background-color: rgb(32, 32, 32);
+    }
+
+    h1 {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 100px;
+        text-shadow: 2px 2px #ffffff;
+    }
+
+    p {
+        color: white;
+        padding-left: 50px;
+        font-size: 30px;
+    }
+
+    em {
+        font-style: normal;   
+        font-weight: bold;
+        font-size: 60px;
+        color: red;
+        padding: 20px;
+    }
+
+    footer {
+        padding-left: 50px;
+        padding-top: 300px;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: white;
+    }
+
+
+</style>
+<body>
+    <h1>Question 50 </h1>
+    <p>The page has been changed because the two arguments good morning and good evening are <em>NOT</em> quotes so they will give an error</p>
+    <script>
+        function myFunction(arg1, arg2) {
+          return(arg1 + arg2);
+        }
+        var greeting = myFunction("good morning", "good evening");
+        alert(greeting);
+    </script>
+    <script>
+        function init() {
+            var loc = window.location.href;
+            var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+            var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                                    loc + '?profile=css3';
+            document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+            document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+        }
+        window.onload = init;
+    </script>
+
+    <footer id="vLinks">
+        <a id="vLink1">
+        <strong> HTML </strong> Valid! </a> 
+        <a id="vLink2">
+        <strong> CSS </strong> Valid! </a>
+    </footer>
+
+</body>
+</html>%  
